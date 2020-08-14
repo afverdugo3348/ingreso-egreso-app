@@ -19,6 +19,8 @@
         "@angular/platform-browser": "~7.2.0",
         "@angular/platform-browser-dynamic": "~7.2.0",
         "@angular/router": "~7.2.0",
+        "@ngrx/store": "^10.0.0",
+        "@ngrx/store-devtools": "^10.0.0",
         "angularfire2": "^5.4.2",
         "bootstrap": "^4.5.2",
         "core-js": "^2.5.4",
