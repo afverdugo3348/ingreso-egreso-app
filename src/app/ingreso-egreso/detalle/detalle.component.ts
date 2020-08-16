@@ -4,6 +4,7 @@ import { AppState } from 'src/app/app.reducer';
 import { IngresoEgreso } from 'src/app/models/ingreso-egreso';
 import { Subscription } from 'rxjs';
 import { IngresoEgresoService } from 'src/app/services/ingreso-egreso.service';
+import { AppStateWithIngreso } from '../ingreso-egreso.reducer';
 const Swal = require('sweetalert2');
 @Component({
   selector: 'app-detalle',
@@ -15,7 +16,7 @@ export class DetalleComponent implements OnInit, OnDestroy {
   ingresosEgresos: IngresoEgreso[] = [];
   ingresosSubs: Subscription;
   constructor(
-    private store: Store<AppState>,
+    private store: Store<AppStateWithIngreso>,
     private ingresoEgresoService : IngresoEgresoService
   ) { }
 
